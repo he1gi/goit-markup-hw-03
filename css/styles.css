@@ -16,8 +16,10 @@
 /* list */
 .list {
     padding: 0;
+    margin: 0;
     list-style: none;
 }
+
 
 /* title hidden */
 .title-hidden {
@@ -55,6 +57,7 @@ ul {
 
 /* logo */
 .logo {
+    display: block;
     color: var(--accent-color);
     text-decoration: none;
     font-family: Raleway, sans-serif;
@@ -80,13 +83,31 @@ ul {
 }
 
 /* site-nav */
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+} 
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;  
+}
+
+/* current page */
+.link.current {
+    color: var(--accent-color)
 }
 
 .site-nav .link:hover, 
@@ -95,7 +116,20 @@ ul {
 }
 
 /* auth-nav */
+.auth-nav {
+    display: flex;
+    margin-left: 331px;
+}
+
+.auth-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .auth-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--secondary-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -109,10 +143,15 @@ ul {
     color: var(--accent-color);
 }
 
+.wrap-header {
+    display: flex;
+    align-items: center;
+}
 /* секция героя с кнопкой */
 .hero {
     background-color: var(--background-hero);
     text-align: center;
+    align-items: center;
 }
 
 .hero .hero-title {
