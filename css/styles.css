@@ -147,6 +147,10 @@ ul {
     display: flex;
     align-items: center;
 }
+
+.border {
+    border-bottom: 1px solid #ECECEC;
+}
 /* секция героя с кнопкой */
 .hero {
     background-color: var(--background-hero);
@@ -289,6 +293,7 @@ ul {
 }
 
 /* секция фильтров на сайте  */
+
 .filters .filters-button {
     display: inline-block;
     border: none;
@@ -311,6 +316,17 @@ ul {
     background-color: var(--accent-color);
 }
 
+.filters-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.filters .item:not(:last-child) {
+    margin-right: 8px;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
 /* секция примеры работ */
 .examples .examples-title {
     color: var(--primary-text-color);
