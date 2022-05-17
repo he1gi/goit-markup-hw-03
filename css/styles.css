@@ -11,6 +11,7 @@
    --backgroung-buttons-color: rgba(245, 244, 250, 1);
    --primary-buttons-text-color: rgba(33, 33, 33, 1);
    --background-for-button: #188CE8;
+   --border-color-cards: rgba(238, 238, 238, 1)
 }
 
 /* list */
@@ -321,12 +322,10 @@ ul {
     justify-content: center;
 }
 
-.filters .item:not(:last-child) {
+.filters-wrapper .item:not(:last-child) {
     margin-right: 8px;
 }
-.site-nav .item:not(:last-child) {
-    margin-right: 50px;
-}
+
 /* секция примеры работ */
 .examples .examples-title {
     color: var(--primary-text-color);
@@ -352,4 +351,36 @@ ul {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.examples-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.examples-wrapper .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.examples-wrapper .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.examples-wrapper .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.cards-border {
+    width: 370px;
+    height: 404px;
+    border: 1px solid var(--border-color-cards);
+}
+
+.cards-border .examples-title {
+    
+}
+
+.cards-border .examples-text {
+    margin: 4px 24px 20px;
 }
