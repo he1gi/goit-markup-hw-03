@@ -14,13 +14,13 @@
   </head>
   <body>
     <!-- шапка -->
-    <header>
-      <div class="container wrap-header border">
+    <header class="header">
+      <div class="container wrap-header">
         <!-- навигация -->
-        <nav class="wrap-header">
+        <nav class="header-nav">
           <a href="./index.html" class="logo">Web<span class="header-studio">Studio</span></a>
           <ul class="site-nav list">
-            <li class="item"><a href="" class="link current">Студио</a></li>
+            <li class="item"><a href="" class="link current">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
@@ -35,7 +35,7 @@
     <main>
       <!-- секция c кнопкой -->
       <section class="hero section">
-        <div class="container">
+        <div class="container hero-wrapper">
           <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
           <button class="hero-button" type="button">Заказать услугу</button>
         </div>
@@ -44,26 +44,26 @@
       <section class="features section">
         <div class="container">
           <h2 class="title-hidden">Особенности команды WebStudio</h2>
-          <ul class="list">
-            <li>
+          <ul class="list features-wrapper">
+            <li class="item">
               <h3 class="features-title">Внимание к деталям</h3>
               <p class="features-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="features-title">Пунктуальность</h3>
               <p class="features-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="features-title">Планирование</h3>
               <p class="features-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="features-title">Современные технологии</h3>
               <p class="features-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -76,19 +76,20 @@
       <section class="activity section">
         <div class="container">
           <h2 class="activity-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
-              <img src="./images/box1.jpg" alt="Фронтенд разработка" width="370" />
+          <ul class="list activity-wrapper">
+            <li class="item">
+              <img src="./images/box1.jpg" alt="Фронтенд разработка" width="370" height="294" />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/box2.jpg"
                 alt="Разработка пользовательского интерфейса"
                 width="370"
+                height="294"
               />
             </li>
-            <li>
-              <img src="./images/box3.jpg" alt="Дизайн продукта" width="370" />
+            <li class="item">
+              <img src="./images/box3.jpg" alt="Дизайн продукта" width="370" height="294" />
             </li>
           </ul>
         </div>
@@ -97,42 +98,54 @@
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="list team-wrapper">
+            <li class="item">
               <img
                 src="./images/product-designer.jpg"
                 alt="Человек, который формирует концепцию продукта"
                 width="270"
+                height="260"
               />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p class="team-role">Product Designer</p>
+              <div class="card">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-role">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/front-end-developer.jpg"
                 alt="Человек, который занимается созданием веб-сайтов"
                 width="270"
+                height="260"
               />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p class="team-role">Frontend Developer</p>
+              <div class="card">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-role">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/marketing.jpg"
                 alt="Человек, отвечающий за маркетинг"
                 width="270"
+                height="260"
               />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p class="team-role">Marketing</p>
+              <div class="card">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-role">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/ui-designer.jpg"
                 alt="Человек, работающий над графической частью интерфейса"
                 width="270"
+                height="260"
               />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p class="team-role">UI Designer</p>
+              <div class="card">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-role">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -153,7 +166,7 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="item"><a class="link" href="info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item"><a class="link" href="info@devstudio.com">info@example.com</a></li>
             <li class="item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
           </ul>
         </address>
