@@ -44,20 +44,15 @@ body {
     font-style: normal;
 } 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
+h1, h2, h3, p, ul {
     margin-top: 0;
     margin-bottom: 0;
 }
 
 /* logo */
 .logo {
+    margin-bottom: 20px;
+
     display: block;
     color: var(--accent-color);
     text-decoration: none;
@@ -169,7 +164,7 @@ ul {
 }
 
 .hero .hero-button {
-    display: inline-block;
+    display: block;
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
@@ -254,6 +249,8 @@ ul {
 
 /* подвал */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-footer-color);
 }
 .footer .footer-studio {
@@ -265,12 +262,21 @@ ul {
 }
 
 /* адресс */
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+
+}
+
+.address .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .address .address-link {
     color: var(--white-color);
     text-decoration: none;
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
@@ -280,11 +286,10 @@ ul {
 }
 
 .address .link {
+
     color: var(--address-links-color);
     text-decoration: none;
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
@@ -296,7 +301,7 @@ ul {
 /* секция фильтров на сайте  */
 
 .filters .filters-button {
-    display: inline-block;
+    display: block;
     border: none;
     border-radius: 4px;
     min-width: 73px;
@@ -320,6 +325,7 @@ ul {
 .filters-wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 }
 
 .filters-wrapper .item:not(:last-child) {
@@ -340,6 +346,14 @@ ul {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+}
+
+.card {
+    padding: 20px 24px;
+
+    border-right: 1px solid var(--border-color-cards);
+    border-left: 1px solid var(--border-color-cards);
+    border-bottom: 1px solid var(--border-color-cards);
 }
 
 .container {
@@ -371,16 +385,4 @@ ul {
     margin-bottom: 0;
 }
 
-.cards-border {
-    width: 370px;
-    height: 404px;
-    border: 1px solid var(--border-color-cards);
-}
 
-.cards-border .examples-title {
-    
-}
-
-.cards-border .examples-text {
-    margin: 4px 24px 20px;
-}
