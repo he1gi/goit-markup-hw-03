@@ -131,7 +131,7 @@ h1, h2, h3, p, ul {
 /* auth-nav */
 .auth-nav {
     display: flex;
-    margin-left: 331px;
+    margin-left: auto;
 }
 
 .auth-nav .item:not(:last-child) {
@@ -164,13 +164,8 @@ h1, h2, h3, p, ul {
     align-items: center;
 }
 
-.hero .hero-wrapper {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
 .hero.section {
-    padding: 0;
+    padding: 200px 0;
 }
 
 .hero .hero-title {
@@ -246,6 +241,10 @@ h1, h2, h3, p, ul {
 
 
  /* чем мы занимаемся */
+.activity .picture {
+    display: block;
+}
+
 .activity.section {
     padding-top: 0px;
 
@@ -277,6 +276,10 @@ h1, h2, h3, p, ul {
 
 .team-wrapper {
     display: flex;
+}
+
+.team .picture {
+    display:block;
 }
 
 .team .team-title {
@@ -439,19 +442,8 @@ margin-bottom: 4px;
     letter-spacing: 0.03em;
 }
 
-.examples-wrapper img {
+.examples-wrapper .picture {
     display: block;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .examples-wrapper {
@@ -477,3 +469,15 @@ margin-bottom: 4px;
     border-left: 1px solid var(--border-color-cards);
     border-bottom: 1px solid var(--border-color-cards);
 }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
