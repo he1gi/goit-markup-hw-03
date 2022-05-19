@@ -320,13 +320,16 @@ h1, h2, h3, p, ul {
     letter-spacing: 0.03em;
 }
 
-
 .team .team-role {
     color: var(--secondary-text-color);
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+.card {
+    padding: 20px 24px;
 }
 
 /* подвал */
@@ -435,14 +438,6 @@ h1, h2, h3, p, ul {
 
 .examples-wrapper img {
     display: block;
-}
-
-.card {
-    padding: 20px 24px;
-
-    border-right: 1px solid var(--border-color-cards);
-    border-left: 1px solid var(--border-color-cards);
-    border-bottom: 1px solid var(--border-color-cards);
 }
 
 .container {
