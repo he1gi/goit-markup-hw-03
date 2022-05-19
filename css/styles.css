@@ -408,6 +408,7 @@ h1, h2, h3, p, ul {
 .filters-button.button-active {
     color: var(--button-active-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
 }
 
 .filters-wrapper {
