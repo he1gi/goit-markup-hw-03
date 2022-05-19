@@ -423,6 +423,8 @@ h1, h2, h3, p, ul {
 
 /* секция примеры работ */
 .examples .examples-title {
+margin-bottom: 4px;
+
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -470,4 +472,9 @@ h1, h2, h3, p, ul {
     margin-bottom: 0;
 }
 
+.examples-wrapper .card {
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;;
+    border-bottom: 1px solid #EEEEEE;;
+}
 
