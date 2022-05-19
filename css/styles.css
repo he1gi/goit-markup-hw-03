@@ -169,7 +169,9 @@ h1, h2, h3, p, ul {
 }
 
 .hero .hero-title {
-    margin-bottom: 30px;
+    margin: 0 auto;
+    width: 696px;
+
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -183,7 +185,7 @@ h1, h2, h3, p, ul {
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     min-width: 130px;
 
     color: var(--white-color);
