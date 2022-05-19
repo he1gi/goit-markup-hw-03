@@ -473,8 +473,7 @@ margin-bottom: 4px;
 }
 
 .examples-wrapper .card {
-    border-right: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;;
-    border-bottom: 1px solid #EEEEEE;;
+    border-right: 1px solid var(--border-color-cards);
+    border-left: 1px solid var(--border-color-cards);
+    border-bottom: 1px solid var(--border-color-cards);
 }
-
